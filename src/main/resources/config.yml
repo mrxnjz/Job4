@@ -1,0 +1,51 @@
+# EnhancedJobSystem Configuration
+
+# Economy settings (requires Vault)
+economy:
+  enabled: true
+  # Base cost for the first purchased quest per day
+  base-quest-cost: 30.0
+  # Cost doubles for each additional quest: 30 -> 60 -> 120 -> 240...
+  cost-multiplier: 2.0
+
+# Quest settings
+quests:
+  # Free quests given daily per player
+  free-daily-quests: 1
+  # XP awarded per completed quest
+  xp-per-quest: 200
+  # Max quests purchasable per day (0 = unlimited)
+  max-daily-purchased: 0
+
+# Level settings
+levels:
+  max-level: 10
+  # XP required to complete each level (level * 200)
+  # Level 1:  200 XP  | Level 6:  1200 XP
+  # Level 2:  400 XP  | Level 7:  1400 XP
+  # Level 3:  600 XP  | Level 8:  1600 XP
+  # Level 4:  800 XP  | Level 9:  1800 XP
+  # Level 5: 1000 XP  | Level 10: 2000 XP
+
+# Notification settings
+notifications:
+  # Announce level-ups in chat
+  level-up-broadcast: false
+  # Show XP gain in action bar
+  xp-action-bar: true
+
+# Data settings
+data:
+  # Auto-save interval in minutes
+  auto-save-minutes: 5
+  # Data folder location (relative to plugin data folder)
+  player-data-folder: "playerdata"
+
+# GUI settings
+gui:
+  # Sound when opening GUIs
+  open-sound: BLOCK_CHEST_OPEN
+  # Sound when clicking items
+  click-sound: UI_BUTTON_CLICK
+  # Sound when leveling up
+  levelup-sound: UI_TOAST_CHALLENGE_COMPLETE

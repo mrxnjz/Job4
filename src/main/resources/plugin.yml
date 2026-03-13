@@ -1,0 +1,30 @@
+name: EnhancedJobSystem
+version: 1.0.0
+main: com.enhancedjobs.EnhancedJobsPlugin
+api-version: "1.20"
+depend: []
+softdepend: [Vault]
+description: "A comprehensive, extensible job system with quests and leveling"
+author: EnhancedJobs
+
+commands:
+  job:
+    description: Open the job management menu
+    usage: /job
+    aliases: [jobs]
+  jobquests:
+    description: Open the quest management menu
+    usage: /jobquests
+    aliases: [jq]
+  jobadmin:
+    description: Admin commands for the job system
+    usage: /jobadmin <reload|reset <player>>
+    permission: enhancedjobs.admin
+
+permissions:
+  enhancedjobs.admin:
+    description: Admin access for EnhancedJobSystem
+    default: op
+  enhancedjobs.use:
+    description: Allows using the job system
+    default: true
